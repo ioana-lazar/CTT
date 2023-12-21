@@ -1,0 +1,91 @@
+body {
+    margin: 2.5rem;
+    background-color: rgb(228, 228, 228);
+}
+
+/* PICTURE OF THE DAY */
+
+.pic-of-the-day-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pic-of-the-day-img-wrapper {
+    background-color: white;
+    overflow: hidden;
+    width: 30%;
+    /* height: 30rem; */
+    height: fit-content;
+    max-height: 30rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.pic-of-the-day-img {
+    width: -webkit-fill-available;
+}
+
+/* LASTEST PICTURES COMPONENT */
+
+.latest-pictures-wrapper {
+    width: 100%;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 90%, transparent);
+    margin-top: 10rem;
+}
+
+.latest-pictures-title {
+    margin-left: 5rem;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #313131;
+}
+
+#list {
+    animation: scroll 50s linear infinite;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    height: fit-content;
+}
+
+@keyframes scroll {
+    to {
+        translate: calc(-50% - 5px);
+    }
+}
+
+.picture-card-wrapper {
+    height: 15rem;
+    min-width: 15rem;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.picture-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FUNNY PICTURES COMPONENT */
+
+.funny-pictures-wrapper {
+    width: 100%;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 90%, transparent);
+    margin-top: 10rem;
+}
+
+.funny-pictures-title {
+    margin-left: 5rem;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #313131;
+}
